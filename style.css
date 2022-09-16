@@ -156,28 +156,8 @@
   
     animation: topdown 700ms;
   
-  
   }
-  /*
-  footer {
-    margin: 1.9rem auto 1rem;
-    font-size: 1.4rem;
-    line-height: 2.8rem;
-    text-align: center;
-    align-items: center;
-    display: inline-block;
-  }
-  
-  footer a {
-    font-weight: bold;
-    color: var(--fc-2);
-  }
-  
-  footer a:hover {
-    font-weight: bold;
-    color: #86679d;
-  }
-  */
+
   @keyframes topdown {
     0% {
       opacity: 0;
