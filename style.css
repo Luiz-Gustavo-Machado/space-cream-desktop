@@ -5,7 +5,8 @@
   }
   
 :root {
-  
+
+    --ff-accent: "Staatliches", "cursive";
     --ff-heading: 'Staatliches';
     --ff-texting: 'Palanquin', sans-serif;
     --ff-deskp:'Open Sans', sans-serif; 
@@ -24,7 +25,6 @@
     --fs-body: clamp(1.6rem, 0.5rem + 2vw, 2rem);
     --fs-h1: clamp(4rem, 1rem + 2vw, 3rem);
     --fs-h2: clamp(2rem, 0.5rem + 2vw, 2rem);
-  
   }
   
 
@@ -34,7 +34,6 @@
   }
   
   .page {
-  
     max-width: 38.4rem;
     margin: 0 auto;
   }
@@ -55,7 +54,7 @@
     font-weight: 400;
     letter-spacing: 0.05em;
     font-size: var(--fs-h1);
-  
+
     background-color: var(--bg-color3);
     width: 100%;
     text-align: center;
@@ -82,7 +81,6 @@
     font-weight: 400;
     margin: 1.4rem auto 6.3rem auto;
     font-weight: 400;
-  
   }
   
   main {
@@ -100,8 +98,6 @@
   img {
     width: 100%;
     height: auto;
-  
-  
   }
   
   .card img {
@@ -111,15 +107,12 @@
     border-radius: 2rem;
   
     transition: all 200ms;
-    animation: downtop 700ms 350ms forwards;
-    filter: brightness(0.5) saturate(0.5);
-  
-  
+    animation: downtop .7s .5s backwards;
   }
   
   .card img:hover {
-    transform: scale(1.1);
-    opacity: 0.4;
+    transform: scale(1.2);
+    opacity: 0.8;
   }
   
   .card h2 {
@@ -142,7 +135,7 @@
     align-items: center;
     padding: 0.5rem 2.3rem;
   
-    animation: topdown 700ms;
+    animation: topdown .7s .8s backwards;
 }
 
 @keyframes topdown {
@@ -172,7 +165,6 @@
   @media (min-width: 600px) {
   
     .page {
-      height: 100vh;
       max-width: 128rem;
       display: grid;grid-template-columns: 4fr 6fr;
       grid-template-rows: 1fr 120rem;
@@ -203,12 +195,12 @@
       grid-area: main;
       grid-template-columns: repeat(auto-fit, minmax 150px, 1fr);
     }
-  .card h2 {
+
+    .card h2 {
     font-size: 1.5rem;
     align-items: center;
     margin: auto;
     padding: auto;
-    
   }
   
   footer {
@@ -249,7 +241,7 @@
     }
   
     main {
-      grid: 200px 168px 200px / 1fr 1fr 1fr;
+      grid: 200px 168px 200px/ 1fr 1fr 1fr;
       grid-template-areas:
         "A B C"
         "D B F"
@@ -260,22 +252,19 @@
     .card:nth-child(even) img {
       height: 400px;
     }
-  
     .card:nth-child(odd) img {
       height: 200px;
     }
+
     main div:nth-child(1) {
       grid-area: A;
     }
-  
     main div:nth-child(2) {
       grid-area: B;
     }
-  
     main div:nth-child(3) {
       grid-area: C;
     }
-  
     main div:nth-child(4) {
       grid-area: D;
     }
@@ -293,19 +282,15 @@
       background-color: rgba(255, 255, 255, 0.557);
       color: #000;
       top: 50%;
-      right: 0; 
+      right: 50; 
       left: 50%;
       transform: translate(-50%, -50%);
       user-select: none;
       z-index: 100;
     }
   
-    .card {
-      overflow: hidden;
-    }
-  
     .card img {
-      transition: transform 400ms ease;
+      transition: transform .5s ease;
     }
   
     .card:hover img {
