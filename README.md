@@ -8,7 +8,7 @@
 
 Front-end: HTML & CSS
 
-Deploy: 🔗 <a href="#" target="_blank">Visualize a pagina aqui</a>
+Deploy: 🔗 <a href="https://visionary-shortbread-448a65.netlify.app/" target="_blank">Visualize a pagina aqui</a>
 
 # Imagem de referência 
 
